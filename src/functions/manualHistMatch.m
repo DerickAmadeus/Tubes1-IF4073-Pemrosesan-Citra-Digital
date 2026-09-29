@@ -38,7 +38,7 @@ function [imgMatched, countsMatched] = manualHistMatch(imgSrc, imgRef)
 
         M = zeros(256, 1, 'uint8');
         for i = 1:256
-            T = zRef(i);
+            T = zSrc(i);
 
             minDiff = inf;
             bestZ = 0;
